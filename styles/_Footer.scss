@@ -1,0 +1,12 @@
+.footer {
+  @include flexSettings(row, space-around, center);
+  @include sectionLayout(40px 20px, transparent);
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &_socialink {
+    text-decoration: none;
+    color: black;
+  }
+}

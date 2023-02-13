@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Circular Std;
+  src: url("../public/CircularStd-Book.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Circular Std";
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  background-color: #EBCCAB;
+}
+
+@mixin flexSettings($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin sectionLayout($padding, $background) {
+  background-color: $background;
+  padding: $padding;
+}
+
+@import "./Topbar";
+@import "./Bio";
+@import "./Footer";
+@import "./Links";

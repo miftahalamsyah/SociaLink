@@ -1,0 +1,30 @@
+.links {
+  &_center {
+    text-align: center;
+  }
+}
+
+.raise:hover,
+.raise:focus {
+  transform: translateY(0.25em);
+}
+
+.raise {
+  border-radius: 100px;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #8E4B32;
+  width: 50%;
+  border: 2px solid #8E4B32;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  margin-bottom: 20px;
+  padding: 1em 2em;
+  background-color: #C37c4d;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .raise {
+    width: 80%;
+  }
+}

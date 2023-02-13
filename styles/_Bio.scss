@@ -1,0 +1,39 @@
+.bio {
+  @include flexSettings(column, space-around, center);
+  @include sectionLayout(25px 25px, transparent);
+  margin-bottom: 15px;
+  margin-top: 35px;
+  width: 55%;
+  text-align: center;
+  color: #8E4B32;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_profilepic {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url("../public/profilePic.webp");
+    margin-bottom: 20px;
+    //display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  &_name {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  &_username {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bio {
+    width: 80%;
+  }
+}

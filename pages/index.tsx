@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import { Topbar } from '../components/Topbar'
 import { Bio } from '../components/Bio'
 import { Links } from '../components/Links'
 import { Footer } from '../components/Footer'
-
+import {useState} from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,12 +13,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>@miftah.rzky | SociaLink</title>
+        <title>@miftah.rzky | nrrdy.my.id</title>
         <meta name="description" content="socialink" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className="main">
           <section className="topbar">
               <Topbar />
           </section>
@@ -33,6 +32,7 @@ export default function Home() {
           </section>
 
           <Footer/>
+
       </main>
     </>
   )
