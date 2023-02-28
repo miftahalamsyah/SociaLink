@@ -6,13 +6,12 @@ export const Links: NextPage = () => {
         <>
             <div className="links_center">
 
-                <button className="raise" onClick={() => window.open("#", "_blank")}>Blog</button>
+                <button className="raise" onClick={() => window.open("blog", "_blank")}>Blog</button>
                 <button className="raise" onClick={() => window.open("https://github.com/miftahalamsyah", "_blank")}>Github</button>
                 <button className="raise" onClick={() => window.open("https://instagram.com/miftah.rzky", "_blank")}>Instagram</button>
                 <button className="raise" onClick={() => window.open("https://www.linkedin.com/in/miftah-rzky/", "_blank")}>LinkedIn</button>
                 <button className="raise" onClick={() => window.open("https://miftahalamsyah.my.id", "_blank")}>Portfolio</button>
-                <button className="raise" onClick={() => window.open("https://www.youtube.com/@miftahrzky", "_blank")}>YouTube</button>
-
+                <button className="raise" onClick={() => window.open("https://youtube.com/miftahrzky", "_blank")}>YouTube</button>
             </div>
         </>
     );
