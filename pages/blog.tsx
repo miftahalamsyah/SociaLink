@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import { Topbar } from '../components/Topbar'
 import { Bio } from '../components/Bio'
 import { Links } from '../components/Links'
-import { Footer } from '../components/Footer'
+import { Footer } from '../components/blog/Footer'
 import {useState} from "react";
 
 const inter = Inter({ subsets: ['latin'] })

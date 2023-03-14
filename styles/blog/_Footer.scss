@@ -1,0 +1,29 @@
+.blogfooter {
+  @include flexSettings(row, center, center);
+  @include sectionLayout(0px, transparent);
+  font-size: 16px;
+  margin-top: 50px;
+
+  a {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    color: black;
+    scale: 150%;
+  }
+  &_link {
+    @include flexSettings(row, center, center);
+    @include sectionLayout(0px, transparent);
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2rem;
+  }
+
+  &_socialink {
+    @include flexSettings(row, center, center);
+    @include sectionLayout(10px, transparent);
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+}
